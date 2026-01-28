@@ -49,7 +49,7 @@ export default function Location() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="relative order-2 lg:order-1"
+            className="relative"
           >
             <div className="relative">
               {/* Decorative border */}
@@ -77,7 +77,7 @@ export default function Location() {
           </motion.div>
 
           {/* Content */}
-          <div className="order-1 lg:order-2">
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
