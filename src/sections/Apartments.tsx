@@ -13,7 +13,7 @@ const apartments = [
     features: ['Balcony', 'City Views'],
     description:
       'Perfect for young professionals and small families seeking modern comfort with stunning views.',
-    image: '/images/apt-2bed.jpg',
+    image: '/images/apt-2bed.webp',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const apartments = [
     features: ['Balcony', 'Sea Views'],
     description:
       'Spacious living for growing families who appreciate luxury, space, and panoramic vistas.',
-    image: '/images/apt-3bed.jpg',
+    image: '/images/apt-3bed.webp',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const apartments = [
     features: ['Private Garden', 'Premium Finish'],
     description:
       'Exclusive apartments with private garden spaces for seamless indoor-outdoor living.',
-    image: '/images/apt-special.jpg',
+    image: '/images/apt-special.webp',
   },
 ];
 

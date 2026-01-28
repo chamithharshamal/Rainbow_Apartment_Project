@@ -33,7 +33,7 @@ const amenities: Amenity[] = [
         description: "State-of-the-art equipment with panoramic views.",
         icon: Dumbbell,
         size: "medium",
-        image: "/images/amenity-fitness.jpg"
+        image: "/images/amenity-fitness.webp"
     },
     {
         id: "zumba",
@@ -49,7 +49,7 @@ const amenities: Amenity[] = [
         description: "Professional spaces for business gatherings.",
         icon: Presentation,
         size: "small",
-        image: "/images/amenity-meeting.jpg"
+        image: "/images/amenity-meeting.webp"
     },
     {
         id: "office",
@@ -89,7 +89,7 @@ const amenities: Amenity[] = [
         description: "Relaxing socialization lounge for seniors.",
         icon: Users,
         size: "small",
-        image: "/images/amenity-entertainment.jpg"
+        image: "/images/amenity-entertainment.webp"
     },
     {
         id: "tt",
@@ -97,7 +97,7 @@ const amenities: Amenity[] = [
         description: "Recreation spot for active leisure.",
         icon: Table2,
         size: "small",
-        image: "/images/amenity-tennis.jpg"
+        image: "/images/amenity-tennis.webp"
     },
     {
         id: "washroom",

@@ -58,7 +58,7 @@ export default function Location() {
               {/* Main image */}
               <div className="relative overflow-hidden img-zoom">
                 <img
-                  src="/images/location.jpg"
+                  src="/images/location.webp"
                   alt="Rooftop view with sea and landscape"
                   className="w-full h-[400px] lg:h-[500px] object-cover"
                 />

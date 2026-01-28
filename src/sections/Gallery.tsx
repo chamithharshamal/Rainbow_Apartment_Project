@@ -4,27 +4,27 @@ import { ZoomIn } from 'lucide-react';
 
 const galleryImages = [
   {
-    src: '/images/gallery-1.jpg',
+    src: '/images/gallery-1.webp',
     alt: 'Living Room',
     span: 'col-span-2 row-span-2',
   },
   {
-    src: '/images/gallery-2.jpg',
+    src: '/images/gallery-2.webp',
     alt: 'Dining Room',
     span: 'col-span-1 row-span-1',
   },
   {
-    src: '/images/apt-2bed.jpg',
+    src: '/images/apt-2bed.webp',
     alt: 'Two Bedroom Interior',
     span: 'col-span-1 row-span-1',
   },
   {
-    src: '/images/apt-3bed.jpg',
+    src: '/images/apt-3bed.webp',
     alt: 'Three Bedroom Interior',
     span: 'col-span-1 row-span-1',
   },
   {
-    src: '/images/apt-special.jpg',
+    src: '/images/apt-special.webp',
     alt: 'Special Garden Apartment',
     span: 'col-span-1 row-span-1',
   },

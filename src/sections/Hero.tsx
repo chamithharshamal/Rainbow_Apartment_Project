@@ -20,7 +20,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-[120%]"
       >
         <img
-          src="/images/hero.jpg"
+          src="/images/hero.webp"
           alt="Rainbow Apartments Exterior"
           className="w-full h-full object-cover"
         />
