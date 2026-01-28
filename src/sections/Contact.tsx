@@ -61,7 +61,7 @@ export default function Contact() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     required
-                    className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
+                    className="bg-white/5 border-white/10 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
                   />
                 </div>
                 <div className="space-y-2">
@@ -77,7 +77,7 @@ export default function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     required
-                    className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
+                    className="bg-white/5 border-white/10 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
                   />
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Contact() {
                     setFormData({ ...formData, phone: e.target.value })
                   }
                   required
-                  className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold"
                 />
               </div>
 
@@ -111,7 +111,7 @@ export default function Contact() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   rows={4}
-                  className="bg-white/5 border-white/20 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold resize-none"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-white/40 focus:border-gold focus:ring-gold resize-none"
                 />
               </div>
 

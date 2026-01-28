@@ -40,7 +40,7 @@ export default function Location() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="bg-cream py-24 lg:py-32">
+    <section className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image */}
@@ -86,12 +86,12 @@ export default function Location() {
               <span className="text-gold text-sm font-medium tracking-widest uppercase">
                 Location
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mt-4 mb-6">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-[#1a2744] mt-4 mb-6">
                 Rathmalana,
                 <br />
                 Sri Lanka
               </h2>
-              <p className="text-charcoal/80 leading-relaxed mb-8">
+              <p className="text-[#1a2744]/80 leading-relaxed mb-8">
                 Perfectly positioned to offer the best of both worlds - tranquil
                 coastal living with easy city access. Rainbow Apartments
                 provides a serene retreat while keeping you connected to
@@ -115,10 +115,10 @@ export default function Location() {
                   className="text-center p-4 bg-white hover:bg-navy group transition-colors duration-300"
                 >
                   <highlight.icon className="w-6 h-6 text-gold mx-auto mb-2" />
-                  <h4 className="font-medium text-navy group-hover:text-white text-sm mb-1 transition-colors">
+                  <h4 className="font-medium text-[#1a2744] group-hover:text-white text-sm mb-1 transition-colors">
                     {highlight.title}
                   </h4>
-                  <p className="text-xs text-charcoal/60 group-hover:text-white/70 transition-colors">
+                  <p className="text-xs text-[#1a2744]/60 group-hover:text-white/70 transition-colors">
                     {highlight.description}
                   </p>
                 </motion.div>

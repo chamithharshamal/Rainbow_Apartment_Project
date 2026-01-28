@@ -74,7 +74,7 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
     const isEven = index % 2 === 0;
 
     return (
-        <div className="min-h-screen flex items-center justify-center py-20 sticky top-0 bg-white border-t border-gray-100">
+        <div className="min-h-screen flex items-center justify-center py-20 sticky top-0 bg-navy border-t border-white/10">
             <div className="container mx-auto px-6">
                 <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-15`}>
 
@@ -91,14 +91,14 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
                                 <span className="text-gold border border-gold rounded-full p-3">
                                     {floor.icon}
                                 </span>
-                                <span className="text-navy/60 uppercase tracking-widest text-sm font-medium">{floor.subtitle}</span>
+                                <span className="text-white/60 uppercase tracking-widest text-sm font-medium">{floor.subtitle}</span>
                             </div>
 
-                            <h2 className="text-4xl md:text-5xl font-serif text-navy mb-6">
+                            <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
                                 {floor.title}
                             </h2>
 
-                            <p className="text-xl text-navy/80 mb-8 font-light italic">
+                            <p className="text-xl text-white/80 mb-8 font-light italic">
                                 {floor.description}
                             </p>
 
@@ -113,7 +113,7 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
                                         className="flex items-start gap-3"
                                     >
                                         <Check className="w-5 h-5 text-gold mt-1 shrink-0" />
-                                        <span className="text-charcoal/80 font-light">{feature}</span>
+                                        <span className="text-white/80 font-light">{feature}</span>
                                     </motion.div>
                                 ))}
                             </div>
@@ -155,9 +155,9 @@ export default function FloorGuide() {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
 
     return (
-        <section id="floors" className="bg-white relative">
+        <section id="floors" className="bg-navy relative">
             {/* Header */}
-            <div className="bg-white pt-24 pb-10 relative z-10">
+            <div className="bg-navy pt-24 pb-10 relative z-10">
                 <motion.div
                     ref={ref}
                     initial={{ opacity: 0, y: 30 }}
@@ -168,10 +168,10 @@ export default function FloorGuide() {
                     <span className="text-gold text-sm font-medium tracking-widest uppercase">
                         Floor Guide
                     </span>
-                    <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mt-4 mb-6">
+                    <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
                         Explore Our Spaces
                     </h2>
-                    <p className="text-charcoal/70 leading-relaxed">
+                    <p className="text-white/70 leading-relaxed">
                         Navigate through the levels of luxury. From the welcoming ground floor to the exclusive private gardens above, discover a layout designed for modern living.
                     </p>
                 </motion.div>

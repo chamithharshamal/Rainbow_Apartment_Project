@@ -35,7 +35,7 @@ export default function Gallery() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="gallery" className="bg-white py-24 lg:py-32">
+    <section id="gallery" className="bg-navy py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -48,10 +48,10 @@ export default function Gallery() {
           <span className="text-gold text-sm font-medium tracking-widest uppercase">
             Gallery
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mt-4 mb-6">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
             Step Inside Your New Home
           </h2>
-          <p className="text-charcoal/70 leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             Experience the warmth and sophistication of Rainbow Apartments
             interiors, designed with meticulous attention to detail.
           </p>

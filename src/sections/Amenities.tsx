@@ -64,7 +64,7 @@ export default function Amenities() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="amenities" className="bg-cream py-24 lg:py-32">
+    <section id="amenities" className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -77,10 +77,10 @@ export default function Amenities() {
           <span className="text-gold text-sm font-semibold tracking-widest uppercase mb-4 block">
             Services & Facilities
           </span>
-          <h2 className="font-serif text-3xl md:text-5xl text-navy mb-6">
+          <h2 className="font-serif text-3xl md:text-5xl text-[#1a2744] mb-6">
             Curated for <span className="text-gold">Comfort</span>
           </h2>
-          <p className="text-navy/70 max-w-2xl mx-auto text-lg font-light leading-relaxed">
+          <p className="text-[#1a2744]/70 max-w-2xl mx-auto text-lg font-light leading-relaxed">
             Beyond just amenities, we offer a suite of services designed to make everyday living effortless and enjoyable.
           </p>
         </motion.div>
@@ -101,10 +101,10 @@ export default function Amenities() {
               </div>
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300">
+                <h3 className="text-2xl font-serif font-bold text-[#1a2744] mb-4 group-hover:text-gold transition-colors duration-300">
                   {category.title}
                 </h3>
-                <p className="text-navy/60 text-sm mb-8 leading-relaxed min-h-[40px]">
+                <p className="text-[#1a2744]/60 text-sm mb-8 leading-relaxed min-h-[40px]">
                   {category.description}
                 </p>
 
@@ -118,9 +118,9 @@ export default function Amenities() {
                       className="flex items-center gap-3 group/item"
                     >
                       <div className="w-8 h-8 rounded-full bg-navy/5 flex items-center justify-center group-hover/item:bg-gold/10 transition-colors duration-300 flex-shrink-0">
-                        <amenity.icon className="w-4 h-4 text-navy group-hover/item:text-gold transition-colors duration-300" />
+                        <amenity.icon className="w-4 h-4 text-[#1a2744] group-hover/item:text-gold transition-colors duration-300" />
                       </div>
-                      <span className="text-navy/80 text-sm font-medium group-hover/item:text-navy transition-colors duration-300">
+                      <span className="text-[#1a2744]/80 text-sm font-medium group-hover/item:text-[#1a2744] transition-colors duration-300">
                         {amenity.label}
                       </span>
                     </motion.div>

@@ -46,7 +46,7 @@ export default function Apartments() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="apartments" className="bg-white py-24 lg:py-32">
+    <section id="apartments" className="bg-navy py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -59,10 +59,10 @@ export default function Apartments() {
           <span className="text-gold text-sm font-medium tracking-widest uppercase">
             Apartments
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-navy mt-4 mb-6">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mt-4 mb-6">
             Residences Designed for Distinction
           </h2>
-          <p className="text-charcoal/70 leading-relaxed">
+          <p className="text-white/70 leading-relaxed">
             Each apartment is thoughtfully planned to deliver a seamless balance
             of privacy, comfort, and sophistication.
           </p>
@@ -76,7 +76,7 @@ export default function Apartments() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-white shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-2"
+              className="group bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
               {/* Image */}
               <div className="relative overflow-hidden img-zoom">
@@ -94,14 +94,14 @@ export default function Apartments() {
               <div className="p-6">
                 {/* Size */}
                 <div className="flex items-baseline gap-1 mb-4">
-                  <span className="font-serif text-3xl font-bold text-navy">
+                  <span className="font-serif text-3xl font-bold text-white">
                     {apt.size}
                   </span>
-                  <span className="text-charcoal/60 text-sm">{apt.unit}</span>
+                  <span className="text-white/60 text-sm">{apt.unit}</span>
                 </div>
 
                 {/* Features */}
-                <div className="flex items-center gap-4 mb-4 text-sm text-charcoal/70">
+                <div className="flex items-center gap-4 mb-4 text-sm text-white/70">
                   <div className="flex items-center gap-1">
                     <Bed className="w-4 h-4 text-gold" />
                     <span>{apt.bedrooms} Beds</span>
@@ -113,7 +113,7 @@ export default function Apartments() {
                 </div>
 
                 {/* Description */}
-                <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
+                <p className="text-white/70 text-sm leading-relaxed mb-4">
                   {apt.description}
                 </p>
 
@@ -122,7 +122,7 @@ export default function Apartments() {
                   {apt.features.map((feature) => (
                     <span
                       key={feature}
-                      className="px-3 py-1 bg-cream text-charcoal/70 text-xs"
+                      className="px-3 py-1 bg-white/10 text-white/80 text-xs"
                     >
                       {feature}
                     </span>
@@ -132,7 +132,7 @@ export default function Apartments() {
                 {/* CTA */}
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 text-navy font-medium group/link"
+                  className="inline-flex items-center gap-2 text-white font-medium group/link"
                 >
                   <span className="border-b border-transparent group-hover/link:border-gold transition-colors">
                     Inquire Now
