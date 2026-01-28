@@ -74,9 +74,20 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
     const isEven = index % 2 === 0;
 
     return (
-        <div className="min-h-screen flex items-center justify-center py-20 sticky top-0 bg-navy border-t border-white/10">
+        <div className="min-h-screen flex items-center justify-center py-20 sticky top-0 bg-navy border-t border-white/10 relative overflow-hidden">
+            {/* Mobile Background Image - Full Coverage */}
+            <div className="absolute inset-0 lg:hidden z-0">
+                <img
+                    src={floor.image}
+                    alt={floor.title}
+                    className="w-full h-full object-cover opacity-60"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/80 to-navy/95" />
+            </div>
             <div className="container mx-auto px-6">
-                <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-15`}>
+                <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-15 relative`}>
+
+
 
                     {/* Text Content */}
                     <div className="lg:w-1/2 mb-10 ml-10">
@@ -85,7 +96,7 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="flex flex-col justify-center lg:justify-start lg:pt-24 h-full"
+                            className="flex flex-col justify-center lg:justify-start lg:pt-24 h-full relative z-10"
                         >
                             <div className="flex items-center gap-4 mb-6">
                                 <span className="text-gold border border-gold rounded-full p-3">
@@ -120,8 +131,8 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
                         </motion.div>
                     </div>
 
-                    {/* Image */}
-                    <div className="lg:w-[40%] w-full">
+                    {/* Desktop Image */}
+                    <div className="hidden lg:block lg:w-[40%] w-full">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
