@@ -112,13 +112,13 @@ export default function Location() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.05 }}
-                  className="text-center p-4 bg-white hover:bg-navy group transition-colors duration-300"
+                  className="text-center p-4 bg-white"
                 >
                   <highlight.icon className="w-6 h-6 text-gold mx-auto mb-2" />
-                  <h4 className="font-medium text-[#1a2744] group-hover:text-white text-sm mb-1 transition-colors">
+                  <h4 className="font-medium text-[#1a2744] text-sm mb-1">
                     {highlight.title}
                   </h4>
-                  <p className="text-xs text-[#1a2744]/60 group-hover:text-white/70 transition-colors">
+                  <p className="text-xs text-[#1a2744]/60">
                     {highlight.description}
                   </p>
                 </motion.div>

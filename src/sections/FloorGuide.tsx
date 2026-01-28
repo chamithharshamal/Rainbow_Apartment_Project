@@ -74,7 +74,7 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
     const isEven = index % 2 === 0;
 
     return (
-        <div className="min-h-screen flex items-center justify-center py-20 sticky top-0 bg-navy border-t border-white/10 relative overflow-hidden">
+        <div className="min-h-[75vh] flex items-center justify-center py-12 lg:py-16 sticky top-0 bg-navy border-t border-white/10 relative overflow-hidden">
             {/* Mobile Background Image - Full Coverage */}
             <div className="absolute inset-0 lg:hidden z-0">
                 <img
@@ -90,13 +90,13 @@ const FloorCard = ({ floor, index }: { floor: typeof floors[0], index: number })
 
 
                     {/* Text Content */}
-                    <div className="lg:w-1/2 mb-10 ml-10">
+                    <div className="lg:w-1/2 mb-10 ml-6 lg:ml-24">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="flex flex-col justify-center lg:justify-start lg:pt-24 h-full relative z-10"
+                            className="flex flex-col justify-center lg:justify-start lg:pt-16 h-full relative z-10"
                         >
                             <div className="flex items-center gap-4 mb-6">
                                 <span className="text-gold border border-gold rounded-full p-3">
