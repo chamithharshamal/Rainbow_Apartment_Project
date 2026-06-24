@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Award, Eye, Heart, Building2, Target } from 'lucide-react';
+import { Award, Eye, Heart, Building2 } from 'lucide-react';
 
 const stats = [
   { icon: Award, value: '30+', label: 'Years Experience' },
@@ -118,68 +118,6 @@ export default function About() {
                 <div className="text-sm text-white/80">Completion Year</div>
               </motion.div>
             </div>
-          </motion.div>
-        </div>
-
-
-        {/* Vision & Mission */}
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mt-20 lg:mt-32">
-          {/* Vision */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="group bg-white p-8 lg:p-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-          >
-            <div className="absolute top-0 left-0 w-1 h-full bg-gold/20 group-hover:bg-gold transition-colors duration-300" />
-            <div className="absolute top-0 left-0 w-full h-1 bg-gold/20 group-hover:bg-gold transition-colors duration-300" />
-
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6">
-              Our <span className="text-gold">Vision</span>
-            </h2>
-            <div className="border-l-4 border-gold pl-6 mb-8 relative z-10">
-              <div className="text-charcoal/80 text-lg leading-relaxed">
-                <p className="mb-6">
-                  Our vision is to redefine urban living by creating a lifestyle that seamlessly blends luxury, comfort, and nature. This development is designed for those who seek balance — a home that offers panoramic views of the sea, lagoon, and Bolgoda Lake while remaining closely connected to the city.
-                </p>
-                <p>
-                  More than just a residence, it is a sanctuary where modern architecture meets tranquil surroundings, enabling residents to experience elevated living, everyday serenity, and timeless elegance.
-                </p>
-              </div>
-            </div>
-
-            {/* Watermark Icon */}
-            <Eye className="absolute -bottom-10 -right-10 w-64 h-64 text-navy/5 -rotate-12 pointer-events-none" />
-          </motion.div>
-
-          {/* Mission */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="group bg-white p-8 lg:p-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:shadow-xl transition-all duration-300 relative overflow-hidden"
-          >
-            <div className="absolute top-0 left-0 w-1 h-full bg-gold/20 group-hover:bg-gold transition-colors duration-300" />
-            <div className="absolute top-0 left-0 w-full h-1 bg-gold/20 group-hover:bg-gold transition-colors duration-300" />
-
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-navy mb-6">
-              Our <span className="text-gold">Mission</span>
-            </h2>
-            <div className="border-l-4 border-gold pl-6 mb-8 relative z-10">
-              <div className="text-charcoal/80 text-lg leading-relaxed">
-                <p className="mb-6">
-                  Our mission is to design and develop exceptional residential spaces that elevate modern living through thoughtful architecture, superior craftsmanship, and uncompromising quality. We strive to create homes that seamlessly blend luxury, comfort, and functionality, while offering long-term value and lasting appeal.
-                </p>
-                <p>
-                  By focusing on innovation, sustainability, and attention to detail, we aim to deliver environments that enhance everyday life, foster a sense of well-being, and stand as timeless landmarks within their surroundings.
-                </p>
-              </div>
-            </div>
-
-            {/* Watermark Icon */}
-            <Target className="absolute -bottom-10 -right-10 w-64 h-64 text-navy/5 -rotate-12 pointer-events-none" />
           </motion.div>
         </div>
       </div>
